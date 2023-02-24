@@ -17,7 +17,7 @@ This is a Chrome extension that allows you to look up words on the web.
 1. Clone the repository
 2. Open Chrome and go to `chrome://extensions`
 3. Enable developer mode
-4. Click on `Load unpacked` and select the `look-it-up-chrome-extension` folder
+4. Click on `Load unpacked` and select the `look-it-up-chrome-extension/dist` folder
 
 ## Usage
 1. Select a word on a web page
