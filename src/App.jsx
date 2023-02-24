@@ -7,7 +7,7 @@ import Details from './components/Details';
 import Error from './components/Error';
 import { IoAddCircleSharp } from 'react-icons/io5';
 import { MdDelete } from 'react-icons/md';
-import './App.css';
+import Saved from './components/Saved';
 
 const App = () => {
 
@@ -104,26 +104,7 @@ const App = () => {
           :
           <>
             {
-              listVisible && <div className='saved'>
-                <h1 className="saved--words--title" data-theme={isDark?"dark":""}>Saved Words</h1>
-                <ul className="saved--words">
-                  {
-                    savedWords.map(word => {
-                      return <li 
-                          className="saved--word" 
-                          data-theme={isDark?"dark":""} 
-                          key={nanoid()}
-                          onClick={() => {
-                            setPrompt(word);
-                            setSearch(true);
-                          }}
-                        >
-                          {word}
-                        </li>
-                    })
-                  }
-                  </ul>
-              </div>
+              listVisible && <Saved isDark={isDark} savedWords={savedWords} setPrompt={setPrompt} setSearch={setSearch}/>
             }
             <div className="word--details">
               <div className="word--details--inner">
