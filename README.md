@@ -3,9 +3,9 @@
 This is a Chrome extension that allows you to look up words on the web.
 
 ## Screenshots
-![Extension](/Chrome%20Extensions/look-it-up-chrome-extension/public/SS1.png)
+![Extension](/public/SS1.png)
 
-![Saved](/Chrome%20Extensions/look-it-up-chrome-extension/public/SS2.png)
+![Saved](/public/SS2.png)
 
 ## Features
 - Look up words on the web
