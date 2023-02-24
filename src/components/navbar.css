@@ -1,0 +1,86 @@
+:root {
+    --background: white;
+    --purple: #8a2be2;
+    --word: black;
+    --background-button: rgb(243, 240, 240);
+}
+
+[data-theme = "dark"]{
+    --background: #36393F;
+    --purple: #b06def;
+    --word: antiquewhite;
+    --background-button: rgb(30, 29, 29);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin-top: 30px;
+}
+
+.logo {
+    font-size: 50px;
+    color: var(--purple);
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 2px;
+}
+
+.title--navbar {
+    font-family: 'Labrada', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+.theme {
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--purple);
+    background-color: var(--background-button);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #8a2be2;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.theme:hover {
+    color: white;
+    background-color: var(--purple);
+}
+
+.nav--buttons {
+    display: flex;
+    gap: 30px;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.list--button {
+    height: 40px;
+    width: 40px;
+    background: var(--background-button);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 200ms;
+    color: var(--purple);
+    border: 1px var(--purple) solid;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.list--button:hover {
+    background-color: var(--purple);
+    color: white;
+}

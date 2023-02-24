@@ -1,0 +1,73 @@
+:root {
+    --word: black;
+    --purple: #8a2be2;
+    --gray: gray;
+    --hrline: rgb(164, 160, 160);
+}
+
+[data-theme = "dark"]{
+    --word: antiquewhite;
+    --purple: #b06def;
+    --gray: rgb(202, 199, 199);
+    --hrline: rgb(201, 198, 198);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pos {
+    display: flex;
+    width: 90vw;
+    font-family: 'Mynerve', cursive;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hor--line {
+    width: 70vw;
+    height: 2px;
+    background-color: var(--hrline);
+    border-radius: 10px;
+    border: none;
+}
+
+.speech {
+    font-size: 40px;
+    color: var(--word);
+}
+
+.meanings, .synonyms, .antonyms {
+    width: 70vw;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.title {
+    color: var(--gray);
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    color: var(--gray);
+}
+ul li::before {
+    content: "\2022";
+    color: var(--purple);
+    font-weight: bolder;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.list--item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+

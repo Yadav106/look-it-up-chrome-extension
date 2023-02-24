@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+:root {
+  --background: white;
+  --purple: #8a2be2;
+  --word: black;
+}
+
+html {
+  overflow: scroll;
+}
+
+body {
+  overflow: scroll;
+}
+
+.root {
+  overflow: scroll;
+}
+
+.main {
+  width: 800px;
+  height: 800px;
+  overflow: scroll;
+}
+
+[data-theme = "dark"]{
+  --background: #36393F;
+  --purple: #b06def;
+  --word: antiquewhite;
+}
+
+.dict {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+}
+
+.word {
+  width: 90vw;
+  font-size: 60px;
+  font-family: 'Labrada', serif;
+  color: var(--word);
+}
+
+.phonetic {
+  color: var(--purple);
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.themebg {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -100;
+  background-color: var(--background);
+}
+
+.word--details--inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.word--details {
+  display: flex;
+}

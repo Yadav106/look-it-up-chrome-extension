@@ -1,0 +1,59 @@
+.saved {
+    width: 80vw;
+}
+
+.saved--words--title {
+    font-size: 30px;
+    font-family: 'Labrada', serif;
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+.saved--words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.saved--word {
+    font-size: 25px;
+    font-family: 'Labrada', serif;
+    color: var(--word);
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+    cursor: pointer;
+    width: fit-content;
+}
+
+.word--add--icon {
+    cursor: pointer;
+    font-size: 50px;
+    position: absolute;
+    right: 100px;
+    color: var(--purple);
+  }
+
+  .saved--text {
+    position: absolute;
+    top: 5px;
+    background-color: #b06def;
+    color: white;
+    border-radius: 40px;
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .word--delete--icon {
+    cursor: pointer;
+    font-size: 50px;
+    position: absolute;
+    right: 100px;
+    color: red;
+  }
+  
+  .word--add--icon:hover {
+    transform: scale(1.2);
+  }
