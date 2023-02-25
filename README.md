@@ -2,6 +2,14 @@
 
 This is a Chrome extension that allows you to look up words on the web.
 
+## Contents
+[Screenshots](#screenshots) \
+[Features](#features) \
+[Installation](#installation) \
+[Usage](#usage) \
+[Author](#author) \
+[Contributing](#contributing)
+
 ## Screenshots
 ![Extension](/public/SS1.png)
 
